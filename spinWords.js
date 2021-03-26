@@ -8,20 +8,3 @@
 
 // spinWords( "This is another test" )=> returns "This is rehtona test"
 
-
-function spinWords(str){
-    var newstr= str.split(' ')
-    var answer=[]
-    
-    for (var i = 0 ; i < newstr.length;i++){
-      if (newstr[i].length>=5){
-        answer.push(newstr[i].split('').reverse().join(''))
-      } else{
-         answer.push(newstr[i])
-      }
-     
-    }
-   
-    return  answer.join(' ')
-   
-  }
